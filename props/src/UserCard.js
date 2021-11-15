@@ -21,8 +21,10 @@ return(<div className="ui card">
 
 <div className="ui bottom button">
     <i className="add icon"> add friend</i>
-</div>
 
+   
+</div>
+<button className="mt-8 btn btn-blue bg-blue-700 px-4 py-2 text-white font-bold hover:bg-red-700 rounded">tailwind</button>
 </div>)
 }
 export default  UserCard;
