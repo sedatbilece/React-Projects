@@ -2,20 +2,23 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 
-const App=()=>{
 
+class App extends React.Component{
 
-     window.navigator.geolocation.getCurrentPosition(
+   render(){
+
+      window.navigator.geolocation.getCurrentPosition(
          
-        (position)=>console.log(position),
-        (error)=>console.log(error)
-     );
+         (position)=>console.log(position),
+         (error)=>console.log(error)
+      );
 
-    return(<div>
-        
-       <div className="ui botton">deneme</div>
-        
-    </div>)
+      return (
+         <div className="ui card">
+            kuzey yarım küredesin
+         </div>
+      )
+   }
 }
 
 
