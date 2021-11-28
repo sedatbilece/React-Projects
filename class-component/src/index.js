@@ -5,17 +5,34 @@ import ReactDOM from "react-dom";
 
 class App extends React.Component{
 
-   render(){
+   constructor(props){// ilk oluşturmada çağrılır / zorunlu değil
+    
+      super(props);//miras alınan classları çağırır
+
+      this.state ={ latitude:25 }//state oluşturuldu
 
       window.navigator.geolocation.getCurrentPosition(
          
-         (position)=>console.log(position),
-         (error)=>console.log(error)
-      );
+         (position)=>{//position bilgisi gelirse yapılacak işlem 
+            this.setState({latitude:position.coords.latitude})// state güncelleme
+         },
+         (error)=>console.log(error)  
+         
+         );
+
+
+
+   }
+
+
+   render(){// class component için oluşturulması zorunlu method
+
+     
+     
 
       return (
          <div className="ui card">
-            kuzey yarım küredesin
+            {this.state.latitude}
          </div>
       )
    }
