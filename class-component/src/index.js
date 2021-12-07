@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
+import HemisphereDisplay from "./HemisphereDisplay";
 
 
 class App extends React.Component{
@@ -9,11 +9,11 @@ class App extends React.Component{
       
     
       super(props);//miras alınan classları çağırır
-
+      this.state ={ latitude:25 ,errorMassage:""}//state oluşturuldu
 
    }
 
-   state ={ latitude:25 ,errorMassage:""}//state oluşturuldu
+  
 
 
 
@@ -51,7 +51,7 @@ class App extends React.Component{
          if( !this.state.errorMassage &&  this.state.latitude){
             return (
                <div>
-               {this.state.latitude}
+               <HemisphereDisplay  latidute={this.state.latitude} />
                
                </div>
             )
