@@ -10,8 +10,15 @@ class App extends React.Component{
     
       super(props);//miras alınan classları çağırır
 
-      this.state ={ latitude:25 ,errorMassage:""}//state oluşturuldu
 
+   }
+
+   state ={ latitude:25 ,errorMassage:""}//state oluşturuldu
+
+
+
+   componentDidMount(){// sayfa yüklemesinde component render edildikten sonra bir defa çağrılır
+     
       window.navigator.geolocation.getCurrentPosition(
          
          (position)=>{//position bilgisi gelirse yapılacak işlem 
@@ -25,9 +32,9 @@ class App extends React.Component{
          
          );
 
+       
+         } 
 
-
-   }
 
 
    render(){// class component için oluşturulması zorunlu method
