@@ -5,7 +5,10 @@ class SearchInput extends React.Component{
 constructor (props){
     super(props);
 
-    this.state={entry:'input '}
+    this.state={entry:' '}
+
+
+    this.onFormSubmit=this.onFormSubmit.bind(this);// fonksiyon bağlanır (state undefined hatası için çözüm)
 }
 
     onInputChange(event){//değişim olduğunda çağırılacak method
@@ -15,12 +18,17 @@ console.log(event.target.value)
 
     }
 
+    onFormSubmit(event){
+         event.preventDefault();    
+console.log(this.state.entry);
+    }
+
 
       render(){
 
             return ( <div>
                 
-                <form className="inline-block w-full mt-20 ml-64">
+                <form onSubmit={this.onFormSubmit} className="inline-block w-full mt-20 ml-64">
 
                 <div class="grid grid-cols-4 gap-4">
 
