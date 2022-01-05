@@ -5,3 +5,4 @@ ImageList-App adlı projede state , component , fonksiyon ve class component kul
  
  
  # 
+ çalıştırmak için indirilen kodda >> cd imagelist-app  >> npm start yapmanız yeterlidir
