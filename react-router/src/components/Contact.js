@@ -1,9 +1,10 @@
 import React from "react";
 
 
-const Contact =()=>{
+const Contact =(props)=>{
 
-
+console.log(props);
+  
     return(<div className="">
 
         <h3 className="bg-cyan-300 inline-block">Contact</h3>

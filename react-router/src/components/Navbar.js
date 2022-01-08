@@ -12,6 +12,7 @@ return(<div>
     ['Home', '/'],
     ['About', '/About'],
     ['Contact', '/Contact'],
+    ['Cards','/Card']
   ].map(([title, url]) => (
     <NavLink to={url} className="rounded-lg px-3 py-2 text-gray-700 font-medium hover:bg-gray-100 hover:text-gray-900">{title}</NavLink>
   ))}
