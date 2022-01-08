@@ -4,9 +4,9 @@ import React from "react";
 const Home =()=>{
 
 
-    return(<div className="">
+    return(<div className="Home">
 
-        <h3>Home</h3>
+        <h3 className="bg-green-300 inline-block mt-32" >Home</h3>
 <div>
   When controlling the flow of text, using the CSS property
   <span class="inline">display: inline</span>
