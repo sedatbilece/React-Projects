@@ -18,7 +18,7 @@ console.log(event.target.value)
 
     }
 
-    onFormSubmit(event){
+    onFormSubmit(event){//enter basıldığında yada butona basılınca çağrılıcak
          event.preventDefault();    
            
          this.props.onSearchSubmit(this.state.entry);
