@@ -31,17 +31,17 @@ console.log(event.target.value)
                 
                 <form onSubmit={this.onFormSubmit} className="inline-block w-full mt-20 ml-64">
 
-                <div class="grid grid-cols-4 gap-4">
+                <div class="grid grid-cols-4 gap-4 bg-red-300">
 
                     <div>
                     <input type="text" placeholder="Write Here !" 
                     onChange={(event)=>this.setState({entry:event.target.value.toUpperCase()})} //burada parantez konursa render edildiği gibi çağrılır
                     value={this.state.entry}
-                    className=" inline-block focus:outline-none focus:outline-cyan-300 focus:placeholder-cyan-500 shadow appearance-none border rounded w-96 py-2 px-3 text-gray-700 leading-tight " />
+                    className=" inline-block focus:outline-none focus:outline-cyan-300 focus:placeholder-cyan-500 shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight z-10  " />
                     </div>
 
                     <div>
-                    <button type="submit" className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Search</button>
+                    <button type="submit" className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full z-20 " >Search</button>
                     </div>
                      </div>
                   
