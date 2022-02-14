@@ -31,7 +31,7 @@ console.log(event.target.value)
                 
                 <form onSubmit={this.onFormSubmit} className="inline-block w-full mt-20 ml-64">
 
-                <div class="grid grid-cols-4 gap-4 bg-red-300">
+                <div class="grid grid-cols-4 gap-4 ">
 
                     <div>
                     <input type="text" placeholder="Write Here !" 

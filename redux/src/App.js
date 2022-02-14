@@ -1,23 +1,39 @@
 import logo from './logo.svg';
 import './App.css';
+import { createStore } from 'redux'
 
 function App() {
+
+  function counterReducer(state = { value: 7 }, action) {
+    switch (action.type) {
+      case 'counter/incremented':
+        return { value: state.value + 1 }
+      case 'counter/decremented':
+        return { value: state.value - 1 }
+      default:
+        return state
+    }
+  }
+  
+let store = createStore(counterReducer);
+
+
+
+store.subscribe(() => console.log(store.getState()))
+
+
+store.dispatch({ type: 'counter/incremented' })
+// {value: 1}
+store.dispatch({ type: 'counter/incremented' })
+// {value: 2}
+store.dispatch({ type: 'counter/decremented' })
+// {value: 1}
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     
+     
+
     </div>
   );
 }

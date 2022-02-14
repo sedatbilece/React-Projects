@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import southernpic from "./images/southern.jpg";
 import northernpic from "./images/northen.jpg";
+
+
 const HemisphereDisplay=({latidute})=>{ // {latidute } props.latidute alınır sadece props ile gelen verilerden
 
 
