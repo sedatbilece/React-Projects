@@ -6,7 +6,7 @@ const images =   props.images.map(image=>{//map fonksiyonu propdan gelen dizi i�
   // map fonksiyonu burada primitive dillerdeki while gibi
                return(
                
-                        <div className="w-full  ">
+                        <div className="grid-item">
                            <img className="rounded-2xl "  key={image.id} src={image.webformatURL} />
                         </div>
 
@@ -15,10 +15,12 @@ const images =   props.images.map(image=>{//map fonksiyonu propdan gelen dizi i�
                  });
 
 //tek bir comp içinde images listesindeki componentlar geri döndürülür
-return (<div className="container mx-auto space-y-2 lg:space-y-0 lg:gap-2 lg:grid lg:grid-cols-3 mt-8">
+return (<div className="grid-container">
 {images}
 </div>)
 
 
 }
 export default ImageList;
+
+
