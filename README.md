@@ -11,6 +11,16 @@
 
 ## Projeler
 
+**ImageList-App Projesi**
+> api isteği ile gelen resimlerin çekilip görüntülenmesini amaçlayan proje .
+> `api resim çekme` , `binding` , `kontrollü ve kontrolsüz formlar` ve `componentler arası iletişim`   yapıldı .
+[Buradan Ulaşabilirsiniz](https://github.com/sedatbilece/React-Projects/tree/master/imagelist-app)
+
+**Class-component Projesi**
+> class componentlar ve farklı react fonksiyonları denendi .
+> `class component` , `state` , `yaşam döngüleri` , `componentDidMount`  ve `resim ve file import işlemi`  yapıldı .
+[Buradan Ulaşabilirsiniz](https://github.com/sedatbilece/React-Projects/tree/master/class-component )
+
 **Props Projesi**
 > Bu projede react kütüphanesine giriş yapıldı .
 > `Propslar` , `Child component` ve `veri aktarımı` üzerine çalışıldı
@@ -18,16 +28,10 @@
 
 
 
-**Class-component Projesi**
-> class componentlar ve farklı react fonksiyonları denendi .
-> `class component` , `state` , `yaşam döngüleri` , `componentDidMount`  ve `resim ve file import işlemi`  yapıldı .
-[Buradan Ulaşabilirsiniz](https://github.com/sedatbilece/React-Projects/tree/master/class-component )
 
 
-**ImageList-App Projesi**
-> api isteği ile gelen resimlerin çekilip görüntülenmesini amaçlayan proje .
-> `api resim çekme` , `binding` , `kontrollü ve kontrolsüz formlar` ve `componentler arası iletişim`   yapıldı .
-[Buradan Ulaşabilirsiniz](https://github.com/sedatbilece/React-Projects/tree/master/imagelist-app)
+
+
 
 
 
