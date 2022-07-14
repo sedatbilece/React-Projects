@@ -15,7 +15,7 @@
 > api isteği ile gelen resimlerin çekilip görüntülenmesini amaçlayan proje .
 > `api resim çekme` , `binding` , `kontrollü ve kontrolsüz formlar` ve `componentler arası iletişim`   yapıldı .
 [Buradan Ulaşabilirsiniz](https://github.com/sedatbilece/React-Projects/tree/master/imagelist-app)
-![İmageList-App Review gif](https://github.com/sedatbilece/React-Projects/blob/master/imagelistGIF.gif)
+![İmageList-App Review gif](https://github.com/sedatbilece/React-Projects/blob/master/imagelistGIF.gif =400x250)
 
 **Class-component Projesi**
 > class componentlar ve farklı react fonksiyonları denendi .
