@@ -2,7 +2,7 @@ import './App.css';
 import {useState} from 'react';
 import Home from './Home';
 import SiteContext from './context/SiteContext';
-
+import Api from './Api';
 function App() {
 
   const [theme, setTheme] = useState('light');
@@ -15,10 +15,18 @@ function App() {
     setLanguage
   }
   return (
-    <SiteContext.Provider value={data} >
+   <div>
+     <SiteContext.Provider value={data} >
 
-          <Home />
-    </SiteContext.Provider>
+<Home />
+</SiteContext.Provider>
+
+<hr></hr>
+<h1>API İSTEK İŞLEMLERİ</h1>
+<hr></hr>
+<Api />
+   </div>
+
   );
 }
 
